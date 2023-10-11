@@ -1,0 +1,12 @@
+To add validations in input data
+
+1. add spring-boot-starter-validation dependency in pom.xml
+
+2. go to your controllers check you are getting data through which class (UserDto here)
+	--> go to this class and add the validations (like @NotEmpty @Email)
+	
+3. Add Exception in GlobalExceptionHandler
+
+4. Add @Valid in controller before @RequestBody	
+	
+	

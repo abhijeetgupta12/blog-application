@@ -1,0 +1,15 @@
+@ControllerAdvice and @RestControllerAdvice are both annotations that are used to create a global exception handler in a Spring Boot application. 
+The main difference between the two is the response format that they return.
+
+@ControllerAdvice is used to create a global exception handler that returns a view (HTML) as the response. 
+It is typically used in web applications where you want to display a custom error page to the user when an exception occurs.
+
+@RestControllerAdvice is used to create a global exception handler that returns a JSON or XML response. 
+It is typically used in RESTful web services where you want to return a specific error response in case of an exception.
+
+In short, @ControllerAdvice is used for handling exceptions in web applications and returns a view as a response, 
+while @RestControllerAdvice is used for handling exceptions in RESTful web services and returns a JSON or XML response.
+
+@RestControllerAdvice is just a syntactic sugar for @ControllerAdvice + @ResponseBody
+
+
